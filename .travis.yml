@@ -8,7 +8,7 @@ jobs:
       node_js: "8"
       script: echo "Deploying to npm ..."
       before_deploy:
-        - npm script
+        - npm run script
       deploy:
         provider: npm
         email: "hello@braincrumbs.io"
