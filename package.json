@@ -1,11 +1,10 @@
 {
   "name": "booben-html-meta",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "./lib/index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir lib --plugins transform-es2015-modules-commonjs",
-    "prepare": "ls -l"
+    "build": "babel src --out-dir lib --plugins transform-es2015-modules-commonjs"
   },
   "dependencies": {
     "lodash.mapvalues": "^4.6.0"
