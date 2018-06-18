@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir lib --plugins transform-es2015-modules-commonjs",
-    "prepare": "npm run build"
+    "prepare": "npm i && npm run build"
   },
   "dependencies": {
     "lodash.mapvalues": "^4.6.0"
