@@ -2,16 +2,14 @@ language: node_js
 node_js:
   - "8"
 
-install: "npm i"
 jobs:
   include:
     - stage: npm release
       node_js: "8"
-      script: echo "Deploying to npm ..."
+      script: npm i
       deploy:
         provider: npm
         email: "hello@braincrumbs.io"
         api_key: "$NPM_API_KEY"
         on:
           branch: master
-
