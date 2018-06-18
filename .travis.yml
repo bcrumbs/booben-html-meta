@@ -6,9 +6,11 @@ jobs:
   include:
     - stage: npm release
       node_js: "8"
+      script: npm run build
       before_deploy:
         - npm i
         - npm run build
+        - ls -l
       deploy:
         provider: npm
         email: "hello@braincrumbs.io"
