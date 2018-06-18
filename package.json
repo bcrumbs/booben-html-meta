@@ -8,7 +8,10 @@
     "prepare": "npm run build"
   },
   "dependencies": {
-    "lodash.mapvalues": "^4.6.0"
+    "lodash.mapvalues": "^4.6.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
