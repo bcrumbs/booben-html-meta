@@ -6,9 +6,13 @@ jobs:
   include:
     - stage: npm release
       node_js: "8"
+      before_deploy:
+        - npm i
+        - npm run build
       deploy:
         provider: npm
         email: "hello@braincrumbs.io"
         api_key: "$NPM_API_KEY"
+        skip_cleanup: true
         on:
           branch: master
